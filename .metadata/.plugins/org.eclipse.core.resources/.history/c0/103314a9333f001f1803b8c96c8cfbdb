@@ -1,0 +1,20 @@
+package class_;
+
+class Set {
+	public void setData(String n) {
+		
+	}
+}
+
+public class SungJuk {
+	private String name;
+	private int kor, eng, math, tot;
+	private double avg;
+	private char grade;
+	
+	
+	
+	
+	
+	
+}

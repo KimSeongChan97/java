@@ -1,0 +1,24 @@
+package while_;
+
+public class While01 {
+
+	public static void main(String[] args) {
+		/*
+		 while(조건) {                  do{
+		참 일때
+			}                         }while(조건);
+		=> 거짓                          => 거짓
+		
+		 */
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

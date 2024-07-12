@@ -1,0 +1,28 @@
+package multiArray;
+
+public class MultiArray02 {
+
+	public static void main(String[] args) {
+		int[][] ar = new int[10][10]; // 100개의 정수 값 ( 10행, 10열 )
+		int num=0;
+		
+		//입력
+			for(int i=0; i<ar.length; i++) { // 행
+				for(int j=0; j<ar[i].length; j++) { // 열
+					num++; // num 값을 할당하고 num을 1 증가시킴
+					ar[i][j] = num;
+				}
+			}
+		
+		
+		//출력
+			for(int i=0; i<ar.length; i++) { // 행
+				for(int j=0; j<ar.length; j++) { // 열
+					System.out.print(String.format("%5d", ar[i][j])); // 각 요소를 출력
+				}
+			}
+		System.out.println();
+		
+	}
+
+}

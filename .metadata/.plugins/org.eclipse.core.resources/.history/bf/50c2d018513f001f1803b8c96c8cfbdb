@@ -1,0 +1,23 @@
+package class_;
+
+public class ComputeMain {
+
+	public static void main(String[] args) {
+		ComputeDTO aa = new ComputeDTO();
+		System.out.println("aa = " + aa);
+		aa.setX(320);
+		//aa.setY(258);
+
+	}
+
+}
+
+
+/*
+[문제] 합, 차, 곱, 몫 구하시오.
+
+[실행결과]
+X		Y		SUM		SUB		MUL		DIV
+320		258
+
+*/

@@ -1,0 +1,22 @@
+package class__;
+
+public class VarArgs {
+
+	public static void main(String[] args) {
+		VarArgs va = new VarArgs();
+		
+		System.out.println("25 + 36 = " + va.sum(10, 20));
+		System.out.println("25 + 36 = " + va.sum(10, 20, 30));
+		System.out.println("25 + 36 = " + va.sum(10, 20, 30, 40));
+		
+		
+	}
+
+}
+
+
+/*
+
+
+
+*/

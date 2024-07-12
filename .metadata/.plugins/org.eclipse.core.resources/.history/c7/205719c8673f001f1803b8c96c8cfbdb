@@ -1,0 +1,15 @@
+package homework_class;
+
+import java.util.Scanner;
+
+public class MemberServiceAnswer {
+	private MemberDTO[] ar = new MemberDTO[5]; // 5명의 인원
+	private Scanner scan = new Scanner(System.in);
+	
+		// 메뉴 출력
+	
+	
+	
+	
+	
+	}

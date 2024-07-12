@@ -1,0 +1,20 @@
+package class__;
+
+public class Method02 {
+		
+		public int sum(int a, int b){ // 구현
+			return a+b; 
+		}
+		
+	public static void main(String[] args) {
+		//System.out.println("25 + 36 = " + sum(25, 36)); static 이 없으므로 error
+		
+		Method02 m = new Method02(); // 객체 생성
+		System.out.println("25 + 36 = " + m.sum(25, 36)); // error 없게 하기 위해 객체 생성을 해야함
+
+		
+		
+		
+	}
+
+}

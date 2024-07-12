@@ -1,0 +1,39 @@
+package class__;
+
+import java.util.Scanner;
+
+public class StringBufferMain {
+
+	public StringBufferMain() {
+		Scanner scan = new Scanner(System.in);
+		System.out.print("원하는 단을 입력 : ");
+		int dan = scan.nextInt();
+	}
+	
+	public void output() {
+		
+	}
+	
+	public static void main(String[] args) {
+		//생성자를 호출해야함
+		new StringBufferMain();
+		
+
+	}
+
+}
+
+/*
+원하는 단을 입력해라
+
+				
+---------------
+입력 : 2
+---------------생성자 에서 만듦
+2 * 1 = 2		output()으로 만듦
+2 * 2 = 4
+2 * 3 = 6
+...
+2 * 9 = 18
+
+*/

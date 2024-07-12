@@ -1,0 +1,18 @@
+package class__;
+
+public class Method02 {
+		
+		public static int sum(int a, int b){ // 구현
+			return a+b; 
+		}
+		
+	public static void main(String[] args) {
+		//System.out.println("25 + 36 = " + sum(25, 36)); static 이 없으므로 error
+		System.out.println("25 + 36 = " + sum(25, 36));
+
+		
+		
+		
+	}
+
+}

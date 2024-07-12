@@ -1,0 +1,26 @@
+package array;
+
+public class Lotto {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+
+/*
+[문제] 로또 프로그램
+1. 1~45까지의 정수형 값을 가진 6개의 배열이다.
+
+
+
+
+
+
+
+
+
+
+*/

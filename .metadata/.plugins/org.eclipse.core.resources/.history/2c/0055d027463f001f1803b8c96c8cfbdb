@@ -1,0 +1,30 @@
+package class_;
+
+// 1인분
+
+public class SalaryDTO {
+	
+	private String name;
+	private String job;
+	private int basic, extra, tot;
+	private double rate, tax, salary;
+	
+	
+	public void setData(String n, String j, int b, int e) {
+		name = n;
+		job = j;
+		basic = b;
+		extra = e;
+		
+	}
+	
+	public void calc() {
+		tot = basic + extra;
+		double rate = 0.03;
+		int tax = (int)(tot*rate);
+		salary = tot - tax;
+	}
+	
+	
+	
+}

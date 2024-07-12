@@ -1,0 +1,10 @@
+package operator;
+
+public class BitOperator {
+
+	public static void main(String[] args) {
+		int a = +16;
+
+	}
+
+}

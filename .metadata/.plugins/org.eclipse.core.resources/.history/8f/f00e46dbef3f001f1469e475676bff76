@@ -1,0 +1,21 @@
+package class__;
+
+public class Method01 {
+
+	public static void main(String[] args) { // 구현 method, 호출은 JVM
+			//호출 - 클래스명.메소드명
+			Method01.display();
+		
+
+	}
+
+		public static void display() { // 구현, 반드시 호출이 필요
+			System.out.println("static method");
+		}
+	
+		public void output() { // 구현
+			System.out.println("non-static method");
+		}
+	
+}
+

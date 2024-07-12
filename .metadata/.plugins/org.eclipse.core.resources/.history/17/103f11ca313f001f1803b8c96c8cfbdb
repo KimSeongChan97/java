@@ -1,0 +1,82 @@
+package class_;
+
+// Person 클래스를 정의합니다.
+class Person {
+    // 필드 변수를 private으로 선언하여 클래스 외부에서 접근을 막습니다.
+    private String name; // 필드 라는 이름을 가진다.
+    private int age;
+    
+    // name 필드의 값을 설정하는 메서드입니다.
+    public void setName(String n) { // 구현, 함수(  ) // 메소드(파라메터,인수) 
+        name = n;
+    }
+    // age 필드의 값을 설정하는 메서드입니다.
+    public void setAge(int a) {
+        age = a;
+    } // set 의 함수와
+    public void setData(String n, int a) {
+    	name = n;
+    	age = a;
+    }
+    // name 필드의 값을 반환하는 메서드입니다.
+    public String getName() {
+        return name;
+    }
+    // age 필드의 값을 반환하는 메서드입니다.
+    public int getAge() {
+        return age;
+    } // get 의 함수는 주고 받는 관계
+} // class 는 '메뉴판' 같은 것이므로 메인 클래스 내부에 선언을 한다.
+
+// PersonMain 클래스를 정의합니다. 이는 프로그램의 실행 진입점입니다.
+public class PersonMain {
+
+    // 메인 메서드: 프로그램이 시작되는 곳입니다.
+    public static void main(String[] args) {
+        // Person 클래스 타입의 변수 aa를 선언합니다.
+        Person aa;
+        
+        // Person 클래스의 인스턴스를 생성하고 aa에 할당합니다.
+        aa = new Person();
+        
+        // aa 변수에 저장된 객체의 참조 값을 출력합니다.
+        System.out.println("객체 aa = " + aa);
+        
+        // aa 객체의 setName 메서드를 호출하여 name 필드의 값을 설정합니다.
+        aa.setName(" 홍길동 "); // 메서드 호출할 때 { } 가 된다.
+        
+        // aa 객체의 setAge 메서드를 호출하여 age 필드의 값을 설정합니다.
+        aa.setAge(25);
+        
+        // aa 객체의 getName 메서드를 호출하여 name 필드의 값을 출력합니다.
+        // aa 객체의 getAge 메서드를 호출하여 age 필드의 값을 출력합니다.
+        System.out.println(" 이름 = " + aa.getName() + "  나이 = " + aa.getAge());
+        System.out.println();
+        
+        Person bb = new Person(); // 새로운 bb 객체 생성. ( Person class 생성 )
+        System.out.println("객체 bb = " + bb); // 다른 주소가 잡힘
+        bb.setName("코난");
+        bb.setAge(13);
+        System.out.println(" 이름 = " + bb.getName() + "  나이 = " + bb.getAge());
+        System.out.println(); // aa 와 같은 경우로 나온다.
+        
+        Person cc = new Person();
+        System.out.println("객체 cc = " + cc);
+        cc.setData("또치", 50);
+        System.out.println(" 이름 = " + cc.getName() + "  나이 = " + cc.getAge());
+        System.out.println();
+        
+        
+        
+    }
+}
+
+
+/*
+class 는
+캡슐화 
+확장성 이 용이하다.
+
+
+
+*/

@@ -1,0 +1,20 @@
+package class__;
+
+public class Constructor01 {
+	
+	public Constructor01() { // () 안에 아무 것도 없는 것이 기본 생성자
+		System.out.println("기본 생성자");
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		Constructor01 aa = new Constructor01(); // 생성자를 호출.
+		
+		
+		
+	}
+
+}
+
+

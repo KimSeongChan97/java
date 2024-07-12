@@ -1,0 +1,13 @@
+package class_;
+
+// 1인분
+
+
+public class SalaryDTO {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

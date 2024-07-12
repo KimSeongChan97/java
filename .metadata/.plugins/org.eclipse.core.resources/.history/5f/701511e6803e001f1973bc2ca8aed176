@@ -1,0 +1,18 @@
+package homework;
+
+public class SungjukOX {
+	static final String jung = "11111"; // 필드 - 상수화(불변값)
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+/*
+
+
+
+
+*/

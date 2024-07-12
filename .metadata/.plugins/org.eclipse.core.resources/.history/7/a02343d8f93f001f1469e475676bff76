@@ -1,0 +1,26 @@
+package class__;
+
+public class Constructor01 {
+	
+	public Constructor01() { // () 안에 아무 것도 없는 것이 기본 생성자
+		System.out.println("기본 생성자");
+		System.out.println("this = " + this); // class 객체 주소값을 연결
+	}
+	
+	/*
+	 public void Constructor01() { // () 안에 아무 것도 없는 것이 기본 생성자
+		System.out.println("기본 생성자"); // 생성자를 'void' 로 취급을 박탈.
+	}
+	 */
+	
+	public static void main(String[] args) {
+		
+		Constructor01 aa = new Constructor01(); // 생성자를 호출.
+		System.out.println("aa = " + aa); // aa 의 객체 주소값을 불러옴.
+		
+		
+	}
+
+}
+
+

@@ -1,0 +1,17 @@
+package array;
+
+public class Array02 {
+
+	public static void main(String[] args) { // run as 에서 데이터를 주고 시작 (* 호랑이 / 기린 )
+		System.out.println("args[0] = " + args[0]); 
+		System.out.println("args[1] = " + args[1]);
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

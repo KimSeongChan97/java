@@ -1,0 +1,18 @@
+package homework;
+
+public class SungjukOXSolo {
+	static final String JUNG = "11111"; // 필드 - 상수화(불변값)를 알려주기 위해 대문자 사용
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+/*
+
+
+
+
+*/

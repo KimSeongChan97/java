@@ -1,0 +1,26 @@
+package array;
+
+import java.util.Scanner;
+
+public class Array03 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("배열 크기 입력 : ");
+		int size = scan.nextInt();
+		
+		int[] ar = new int[size];
+		
+		
+	}
+
+}
+
+/*
+
+배열 크기 입력 : 난수
+
+
+
+*/

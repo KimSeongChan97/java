@@ -1,0 +1,27 @@
+package multiArray;
+
+public class MultiArray02 {
+
+	public static void main(String[] args) {
+		int[][] ar = new int[10][10]; // 100개의 정수 값 ( 10행, 10열 )
+		int num=0;
+		
+		//입력
+			for(int i=0; i<ar.length; i++) {
+				for(int j=0; j<ar.length; j++) {
+					ar[i][j] = num++;
+				}
+			}
+		
+		
+		//출력
+			for(int i=0; i<ar.length; i++) {
+				for(int j=0; j<ar.length; j++) {
+					System.out.printf("%5d", ar[i][j]);
+				}
+			}
+		System.out.println();
+		
+	}
+
+}

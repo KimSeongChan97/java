@@ -1,0 +1,44 @@
+package class__;
+
+public class VarArgs {
+
+	/*
+	public int sum(int a, int b) {
+		return a+b;
+	}
+	public int sum(int a, int b, int c) {
+		return a+b+c;
+	}
+	public int sum(int a, int b, int c, int d) {
+		return a+b+c+d;
+	}
+	*/
+	// 인수의 파라매터 개수를 자유롭게
+	
+		public int sum(int... ar) { // " ... "  자유롭게 , 내부적으로 배열 인식하여 적용.
+			int hap = 0;
+			for (int i=0; i<ar.length; i++) {
+				hap += ar[i];
+			} // for i
+		}
+	
+	public static void main(String[] args) {
+		VarArgs va = new VarArgs();
+		
+		
+		
+		System.out.println("합 = " + va.sum(10, 20)); // static 이 아님
+		System.out.println("합 = " + va.sum(10, 20, 30));
+		System.out.println("합 = " + va.sum(10, 20, 30, 40));
+		
+		
+	}
+
+}
+
+
+/*
+
+
+
+*/

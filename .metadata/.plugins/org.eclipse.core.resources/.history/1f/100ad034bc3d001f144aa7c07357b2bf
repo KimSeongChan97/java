@@ -1,0 +1,56 @@
+package array;
+
+import java.util.Scanner;
+
+public class Array03 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("배열 크기 입력 : ");
+		int size = scan.nextInt();
+	
+		int[] ar = new int[size];
+		
+		int sum = 0;
+		
+		//입력
+			for(int i=0; i<size; i++) {
+			System.out.print("ar[" + i + "] 입력 : ");
+			ar[i] = scan.nextInt();
+			
+			sum += ar[i];
+			}
+		System.out.println();
+		
+		// 최대값	
+		int max = ar[0];
+			if(ar[0]>max);
+		
+		//출력
+		System.out.println();
+			for(int data : ar) {
+				System.out.print( data + " ");
+				} // for i
+		System.out.println();
+		System.out.println("합 = " + sum);
+		System.out.println("최대값 = " + max);
+	}
+
+}
+
+/*
+
+배열 크기 입력 : 난수(3으로 가정)
+
+ar[0] 입력: 36
+ar[1] 입력: -25
+ar[2] 입력: 100
+.
+.
+.
+
+36	-25	100
+
+
+*/

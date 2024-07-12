@@ -1,0 +1,26 @@
+package while_;
+
+public class While01 {
+
+	public static void main(String[] args) {
+		/*
+		
+		 초기값
+		 while(조건) {                  do{
+		참 일때(증감)
+			}                         }while(조건);
+		=> 거짓                          => 거짓
+		
+		 */
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

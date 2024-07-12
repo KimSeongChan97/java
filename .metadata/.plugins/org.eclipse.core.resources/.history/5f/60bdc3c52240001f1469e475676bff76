@@ -1,0 +1,21 @@
+package class__;
+
+public class ExamMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+/*
+
+[문제] 사지선다형
+- 문제수는 총 5문제를 제공한다.
+- 1문제당 20점씩 처리한다.
+- 정답은 "11111" 으로 고정한다. (명칭은 "JUNGDAP" 으로 한다.)
+
+
+
+*/

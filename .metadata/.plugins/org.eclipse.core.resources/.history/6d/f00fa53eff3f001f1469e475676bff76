@@ -1,0 +1,47 @@
+package class__;
+
+public class StringMain {
+
+	public	StringMain() { // 기본 생성자
+		String aa = "apple"; // literal
+		String bb = "apple"; // literal, ※ 똑같은 내용의 문자열 리터럴은 메모리에 1번만 생성된다. 
+		
+		if(aa==bb) System.out.println("aa와 bb의 참조값은 같다.");
+		else System.out.println("aa와 bb의 참조값은 다르다");
+		
+		if(aa.equals(bb)) System.out.println("aa와 bb의 문자열은 같다.");
+		else System.out.println("aa와 bb의 문자열은 다르다");
+		System.out.println();
+		
+		String cc = new String("apple");
+		String dd = new String("apple");
+		if(cc==dd) System.out.println("cc와 dd의 참조값은 같다");
+		else System.out.println("cc와 dd의 참조값은 다르다");
+
+		if(cc.equals(dd)) System.out.println("cc와 dd의 문자열은 같다");
+		else System.out.println("cc와 dd의 문자열은 다르다");
+		System.out.println();
+		
+		String e = " 오늘 날짜는 " + 2024 + 07 + 12 ;
+		System.out.println(" e = " + e);
+		
+		/*
+		 "오늘 날짜는 "
+		 "오늘 날짜는 2024 "
+		 "오늘 날짜는 202407 "
+		 "오늘 날짜는 20240712 "
+		 
+		 */
+		
+		}
+		
+	public static void main(String[] args) {
+		
+		new StringMain();
+		
+		
+		
+
+	}
+
+}

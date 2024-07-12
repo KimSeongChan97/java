@@ -1,0 +1,18 @@
+package class_;
+
+public class SungJukMain3 {
+
+	public static void main(String[] args) {
+		SungJuk aa = new SungJuk();
+		SungJuk bb = new SungJuk();
+		SungJuk cc = new SungJuk(); // SungJuk class 객체 를 표시
+		
+		SungJuk[] ar = new SungJuk[3]; // 객체배열 생성
+		ar[0] = new SungJuk(); // 배열에 속하는 class 의 객체를 넣음
+		ar[1] = new SungJuk();
+		ar[2] = new SungJuk(); // 진짜 객체를 생성
+		
+
+	}
+
+}

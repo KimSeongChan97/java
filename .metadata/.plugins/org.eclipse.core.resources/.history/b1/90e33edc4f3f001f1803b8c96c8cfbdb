@@ -1,0 +1,14 @@
+package class_;
+
+
+public class ComputeDTO {
+	
+	private int x, y;
+	private int sum, sub;
+	private double mul, div;
+	
+	public void setData (;)
+	
+	
+	
+}

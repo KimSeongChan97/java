@@ -1,0 +1,15 @@
+package class_;
+
+public class SungJukMain3 {
+
+	public static void main(String[] args) {
+		SungJuk aa = new SungJuk();
+		SungJuk bb = new SungJuk();
+		SungJuk cc = new SungJuk(); // SungJuk class 의 객체들 생성
+		
+		
+		
+
+	}
+
+}

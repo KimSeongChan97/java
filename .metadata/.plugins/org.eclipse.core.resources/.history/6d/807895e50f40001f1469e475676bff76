@@ -1,0 +1,44 @@
+package homework_class;
+
+import java.util.Scanner;
+
+import homework_class_solo.MemberDTO;
+
+public class MemberService {
+	private MemberDTO[] ar = new MemberDTO[5]; // 5명의 인원을 저장할 배열
+	private Scanner scan = new Scanner(System.in);
+	
+	public MemberService() {
+		System.out.println("MemberService 기본 생성자");
+	}
+	
+	// 메뉴 출력 및 선택을 처리하는 메서드
+    public void menu() {
+    	int num;
+
+            while(true) { // 무한 반복으로 메뉴를 지속적으로 출력
+                System.out.println("*************");
+                System.out.println("   1. 가입");
+                System.out.println("   2. 출력");
+                System.out.println("   3. 수정");
+                System.out.println("   4. 탈퇴");
+                System.out.println("   5. 끝내기");
+                System.out.println("*************");
+                System.out.print("번호 : ");
+                num = scan.nextInt(); // 사용자의 선택을 입력받음
+                
+                if(num == 5) break;
+                if(num == 1) this.insert(); // 호출 
+                else if(num == 2);
+                else if(num == 3);
+                else if(num == 4);
+                
+            } // while
+        
+    } // menu
+    public void insert() {
+    	
+    }
+    
+    
+}

@@ -1,0 +1,59 @@
+package class__;
+
+import java.util.Scanner;
+
+public class StringBufferMain {
+	private int dan;
+	
+	public StringBufferMain() {
+		Scanner scan = new Scanner(System.in);
+		System.out.print("원하는 단을 입력 : ");
+		dan = scan.nextInt();
+	}
+	
+	public void output() {
+		StringBuffer buffer = new StringBuffer();
+		
+		for (int i=1; i<=9; i++) {
+			//	System.out.println(dan + " * " + i + " = " + dan*i);
+			
+			// append 는 기존 문자열 마지막에 추가되는 것. (계속 이어줌)
+			buffer.append(dan);
+			buffer.append(" * ");
+			buffer.append(i);
+			buffer.append(" = ");
+			buffer.append(dan*i);
+			System.out.println();
+			System.out.println(buffer);
+			
+			//기존에 있는 내용을 삭제시켜야함.
+			buffer.delete(0, 5);
+			buffer.delete(0, 5);
+			
+			
+		}
+	}
+	
+	public static void main(String[] args) {
+		// 객체를 생성하고 생성자를 호출하고, output 를 호출
+		new StringBufferMain().output();
+		
+
+	}
+
+}
+
+/*
+원하는 단을 입력해라
+
+				
+---------------
+입력 : 2
+---------------생성자 에서 만듦
+2 * 1 = 2		output()으로 만듦
+2 * 2 = 4
+2 * 3 = 6
+...
+2 * 9 = 18
+
+*/

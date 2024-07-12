@@ -1,0 +1,28 @@
+package array;
+
+public class Lotto {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+
+/*
+[문제] 로또 프로그램 - 자동 번호
+1. 1~45까지의 정수형 값을 가진 6개의 배열이다. (6개의 배열 값과 1~45의 난수가 필요)
+2. 중복된 숫자를 가지면 안된다.
+3. 오름차순으로 정렬한다.
+4. 1줄 당 1000원이다.
+
+[실행결과]
+돈 입력 : 3200
+
+
+
+
+
+
+*/

@@ -1,0 +1,9 @@
+package homework_class_solo;
+
+public class MemberDTO {
+	private String name;
+	private int age;
+	private String
+
+}
+

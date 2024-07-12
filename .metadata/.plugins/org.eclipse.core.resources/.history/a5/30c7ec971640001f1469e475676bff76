@@ -1,0 +1,107 @@
+package homework_class;
+
+import java.util.Scanner;
+
+import homework_class_solo.MemberDTO;
+
+public class MemberService {
+	private MemberDTO[] ar = new MemberDTO[5]; // 5명의 인원을 저장할 배열
+	private Scanner scan = new Scanner(System.in);
+	
+	public MemberService() {
+		System.out.println("MemberService 기본 생성자");
+	}
+	
+	// 메뉴 출력 및 선택을 처리하는 메서드
+    public void menu() {
+    	int num;
+            while(true) { // 무한 반복으로 메뉴를 지속적으로 출력
+                System.out.println("*************");
+                System.out.println("   1. 가입");
+                System.out.println("   2. 출력");
+                System.out.println("   3. 수정");
+                System.out.println("   4. 탈퇴");
+                System.out.println("   5. 끝내기");
+                System.out.println("*************");
+                System.out.print("번호 : ");
+                num = scan.nextInt(); // 사용자의 선택을 입력받음
+                if(num == 5) break;
+                if(num == 1) this.insert(); // 호출 
+                else if(num == 2) this.list(); 
+                else if(num == 3) this.update();
+                else if(num == 4) this.delete();
+            } // while
+        
+    } // menu
+	    public void insert() {
+	    	System.out.println();
+	    	int i;
+	    	for ( i=0; i<ar.length; i++) {
+	    		if(ar[0] == null) break;
+	    	} // for
+		    	if(i == ar.length) {
+		    		System.out.println(ar.length + " 명의 정원이 꽉 찼습니다. ");
+		    		return; // 메소드를 벗어나라.
+		    	} // if
+		    	ar[i] = new MemberDTO(); // 기본생성자 자동 생성 ( 생성자 1개 있으면 X )
+		    	System.out.print("이름 입력: ");
+	            ar[i].setName(scan.next()); // 사용자로부터 이름을 입력받아 MemberDTO 객체의 setName 메소드로 설정
+	            System.out.print("나이 입력: ");
+	            ar[i].setAge(scan.nextInt()); // 사용자로부터 나이를 입력받아 MemberDTO 객체의 setAge 메소드로 설정
+	            System.out.print("핸드폰 입력: ");
+	            ar[i].setPhone(scan.next()); // 사용자로부터 핸드폰 번호를 입력받아 MemberDTO 객체의 setPhone 메소드로 설정
+	            System.out.print("주소 입력: ");
+	            ar[i].setAddress(scan.next()); // 사용자로부터 주소를 입력받아 MemberDTO 객체의 setAddress 메소드로 설정
+	            System.out.println("회원 가입이 되었습니다."); // 회원 가입 완료 메시지 출력
+	            System.out.println("회원 가입이 완료되었습니다.");
+	    } // insert
+	    public void list() {
+	    	System.out.println();
+	    	System.out.println("이름\t나이\t핸드폰\t\t주소");
+	    	for( MemberDTO dto : ar) { // MemberDTO 에서 넘겨주는 데이터
+	    		if (dto != null)
+	    		System.out.println(dto.getName() + "\t"
+	    							+ dto.getAge() + "\t"
+	    							+ dto.getPhone() + "\t"
+	    							+ dto.getAddress());
+	    	}
+	    	
+	    } // list  
+	    public void update() {
+	    	System.out.println();
+	    	System.out.print("핸드폰 번호 입력 : ");
+	    	String phone = scan.next();
+	    	
+	    	int i;
+	    		for (i=0; i<ar.length; i++) {
+	    			if ( ar[i] != null ) {
+	    				if(ar[i].getPhone().equals(phone)) {
+	    					System.out.println(ar[i].getName() + "\t"
+	    							+ ar[i].getAge() + "\t"
+	    							+ ar[i].getPhone() + "\t"
+	    							+ ar[i].getAddress());
+	    					
+	    					System.out.print("수정 할 이름 입력: ");
+	    					ar[i].setName(scan.next()); // 이름 수정
+	    	                System.out.print("수정 할 나이 입력: ");
+	    	                ar[i].setAge(scan.nextInt()); // 나이 수정
+	    	                System.out.print("수정 할 핸드폰 입력: ");
+	    	                ar[i].setPhone(scan.next()); // 핸드폰 번호 수정
+	    	                System.out.print("수정 할 주소 입력: ");
+	    	                ar[i].setAddress(scan.next()); // 주소 수정
+	    	                
+	    	                System.out.println("회원의 정보를 수정하였습니다.");
+	    					
+	    				} // if getPhone
+	    			} // if
+	    		} // for i
+	    	
+	    } // update
+	    public void delete() {
+	 	
+	 	
+	    } // delete
+	    
+	   
+	    
+	}

@@ -1,0 +1,25 @@
+package basicsolo;
+
+public class VariableBasic {
+
+	public static void main(String[] args) {
+		/*1. int (Integer)
+		크기: 32비트 (4바이트)
+		범위: -2^31 (-2,147,483,648)에서 2^31-1 (2,147,483,647)
+		기본값: 0
+		설명: int는 정수를 저장하는 데 사용됩니다. 일반적으로 루프 카운터, 배열 인덱스, 정수 계산 등에서 많이 사용됩니다.
+		*/
+		int a = 100;
+		int b = -200;
+		int sum = a + b;  // sum은 -100
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

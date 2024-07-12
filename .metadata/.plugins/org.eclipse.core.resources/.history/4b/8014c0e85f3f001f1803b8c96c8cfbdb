@@ -1,0 +1,36 @@
+package homework_class;
+
+public class MemberDTO {
+	// 회원의 정보를 저장할 필드 변수들
+	private String name; // 이름
+    private int age; // 나이
+    private String phone; // 핸드폰번호
+    private String address; // 주소
+	
+    public void setName() {
+    	this.name = name;
+    }
+    public void setAge() {
+    	this.age = age;
+    }
+    public void setPhone() {
+    	this.phone = phone;
+    }
+    public void setAddress() {
+    	this.address = address;
+    }
+    
+    public String getName() {
+    	return this.name;
+    }
+    public int getAge() {
+    	return this.age;
+    }
+    public String getPhone() {
+    	return this.phone;
+    }
+    public String getAddress() {
+    	return this.address;
+    }
+	
+}

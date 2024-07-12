@@ -1,0 +1,9 @@
+package homework_class;
+
+public class MemberDTO {
+
+	이름, 나이, 전화번호, 핸드폰번호, 주소 
+	
+	
+	
+}

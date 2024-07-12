@@ -1,0 +1,9 @@
+package homework_class;
+
+public class MemberDTO {
+
+	이름, 나이, 핸드폰번호, 주소를 set, get 한다.
+	
+	
+	
+}

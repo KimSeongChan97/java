@@ -1,0 +1,18 @@
+package class__;
+
+public class StringMain {
+
+	public	StringMain() { // 기본 생성자
+		String aa = "apple";
+		String bb = "apple";
+		
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}

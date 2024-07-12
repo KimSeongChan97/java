@@ -1,0 +1,16 @@
+package multiArray;
+
+public class MultiArray05 {
+
+	public static void main(String[] args) {
+		//다차원 배열 - 가변길이(ex.영화관 좌석)
+		
+		
+		
+		
+		
+	}
+
+}
+
+

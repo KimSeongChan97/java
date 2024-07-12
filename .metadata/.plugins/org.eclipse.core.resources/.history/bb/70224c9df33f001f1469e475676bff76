@@ -1,0 +1,29 @@
+package class__;
+
+public class VarArgs {
+
+	public int sum(int a, int b) {
+		return a+b;
+	}
+	
+	
+	public static void main(String[] args) {
+		VarArgs va = new VarArgs();
+		
+		
+		
+		System.out.println("합 = " + va.sum(10, 20)); // static 이 아님
+		System.out.println("합 = " + va.sum(10, 20, 30));
+		System.out.println("합 = " + va.sum(10, 20, 30, 40));
+		
+		
+	}
+
+}
+
+
+/*
+
+
+
+*/

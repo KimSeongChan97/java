@@ -1,0 +1,20 @@
+package class_;
+
+class Person {
+	String name;
+	int age;
+} // 가상의 클래스 생성
+
+public class PersonMain {
+
+	public static void main(String[] args) {
+		Person aa; // 객체
+		aa = new Person(); // 생성
+		// aa = new Test(); - error 이미 aa의 클래스가 있으므로 새로운 객체 생성 불가
+		System.out.println("객체 aa = " + aa);
+		
+		
+
+	}
+
+}

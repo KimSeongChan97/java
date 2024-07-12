@@ -1,0 +1,14 @@
+package class_;
+
+public class SungJuk {
+	private String name;
+	private int kor, eng, math, tot;
+	private double avg;
+	private char grade;
+	
+	
+	
+	
+	
+	
+}

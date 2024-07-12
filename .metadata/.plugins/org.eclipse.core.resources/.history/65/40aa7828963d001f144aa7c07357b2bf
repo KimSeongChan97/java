@@ -1,0 +1,134 @@
+package for_;
+
+import java.util.Scanner;
+
+public class AddGameTest {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in); // Scanner 객체 생성
+
+        int a, b; // 덧셈에 사용할 변수들
+        int dab; // 정답을 저장할 변수
+        int count; // 맞춘 문제 수를 세는 변수
+        String yn; // 게임을 계속할지 여부를 저장하는 변수
+
+        // 게임 반복 여부를 위한 루프
+        boolean playAgain = true;
+
+        while (playAgain) {
+            count = 0; // 새로운 게임을 시작할 때 맞춘 문제 수 초기화
+
+            while (true) {
+                // 10부터 99까지의 난수를 생성하여 a, b에 할당
+                a = (int) (Math.random() * 90) + 10; // random 으로 0.0~1.0미만의 난수 생성
+                b = (int) (Math.random() * 90) + 10; // *90을 하여 0~90난수, (int) 로 0~89 정수 생성, +10으로 10~99 
+                dab = a + b; // 정답 계산
+
+                // 문제 출력
+                System.out.print("[" + (count + 1) + "] " + a + " + " + b + " = ");
+
+                // 사용자 입력 받기 (정수만 입력받기 위해 반복문 사용)
+                int answer;
+                while (true) {
+                    if (scanner.hasNextInt()) { // hasNextInt() 는 다음 입력이 정수인지 확인하는 method
+                        answer = scanner.nextInt();
+                        break; // 정수 입력이면 반복문 탈출
+                    } else {
+                        System.out.println("잘못된 입력입니다. 정수를 입력해주세요.");
+                        scanner.next(); // 잘못된 입력 값을 버퍼에서 지움
+                    }
+                }
+
+                // 정답 확인 및 처리
+                if (answer == dab) {
+                    System.out.println("딩동댕!\n");
+                    count++;
+                } else {
+                    System.out.println("틀렸다. 정답은 " + dab + "입니다.\n");
+
+                    // 틀린 경우 한 번 더 시도할지 물어보기
+                    while (true) {
+                        System.out.print("한 번 더 시도할까요? (Y/N) : ");
+                        yn = scanner.next().toUpperCase(); // 대소문자 동일 입력 처리 : toUpperCase()
+                        if (yn.equals("Y") || yn.equals("N")) {
+                            break; // 유효한 입력이면 반복문 탈출
+                        } else {
+                            System.out.println("Y 또는 N을 입력해주세요.");
+                        }
+                    }
+
+                    if (yn.equals("N")) {
+                        break; // N을 입력하면 게임 종료
+                    }
+                }
+
+                // 5문제를 모두 맞춘 경우 게임 종료
+                if (count == 5) {
+                    break;
+                }
+            }
+
+            // 게임 결과 출력
+            System.out.printf("\n당신은 총 %d 문제를 맞추어서 점수 %d점 입니다.\n", count, count * 20);
+            // %d 는 정수 값을 출력하는 서식, 첫 번째 %d 는 맞춘 문제 수 출력 / 두 번째 %d 는 점수를 출력
+
+            // 게임 재시작 여부 확인
+            while (true) {
+                System.out.print("또 할래(Y/N) : ");
+                yn = scanner.next().toUpperCase();
+                if (yn.equals("Y") || yn.equals("N")) {
+                    break; // 유효한 입력이면 반복문 탈출
+                } else {
+                    System.out.println("Y 또는 N을 입력해주세요.");
+                }
+            }
+
+            // Y를 입력하면 게임을 재시작, N을 입력하면 프로그램을 종료
+            playAgain = yn.equals("Y");
+        }
+
+        scanner.close(); // Scanner 객체 닫기
+        System.out.println("프로그램을 종료합니다.");
+    }
+}
+
+
+/*
+[문제] 덧셈 계산 (for, while, 다중 for 사용조건)
+- 10 ~ 99 사이의 난수를 2개 발생하여 합을 구하는 프로그램
+- 5문제를 제공한다.
+- 1문제당 점수 20점씩 처리한다.
+- 틀리면 1번 더 기회를 주고, 2번 다 틀리면 답을 알려준다.
+- y 또는 n 은 대소문자 상관없이 작성하시오.
+- y 또는 Y 또는 n 또는 N 이 입력이 안되면 계속 반복한다.
+
+*변수명 조건
+		int a, b;
+		int dab; // 답은 'dab'이다.
+		int count=0;
+		String yn;
+
+
+[실행결과]
+[1] 25 + 36 = 50
+틀렸다
+[1] 25 + 36 = 59
+틀렸다 정답은 xx
+
+[2] 10 + 25 = 35
+딩동뎅
+
+[5] 78 + 95 = 89
+틀렸다
+[5] 78 + 95 = 173
+딩동뎅
+
+당신은 총 x 문제를 맞추어서 점수 xx점 입니다.
+
+또 할래(Y/N) : A
+또 할래(Y/N) : w
+또 할래(Y/N) : n (N)
+
+프로그램을 종료합니다.
+
+*/

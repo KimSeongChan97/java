@@ -1,0 +1,21 @@
+package array;
+
+import java.util.Scanner;
+
+public class Array03 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		
+	}
+
+}
+
+/*
+
+배열 크기 입력 : 난수
+
+
+
+*/

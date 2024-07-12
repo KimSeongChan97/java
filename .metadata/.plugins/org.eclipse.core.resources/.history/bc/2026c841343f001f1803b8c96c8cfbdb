@@ -1,0 +1,23 @@
+package class_;
+
+
+public class SungJuk {
+	private String name;
+	private int kor, eng, math, tot;
+	private double avg;
+	private char grade;
+	
+	public void setData(String n, int k, int e, int m) { // 구현 시뮬
+		name = n;
+		kor = k;
+		eng = e;
+		math = m;
+	}
+	
+	calc() {
+		
+	}
+	
+	
+	
+}

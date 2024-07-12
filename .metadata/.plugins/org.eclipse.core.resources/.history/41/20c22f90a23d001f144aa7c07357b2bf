@@ -1,0 +1,32 @@
+package array;
+
+public class Array01 {
+
+	public static void main(String[] args) {
+		int[] ar; // 배열 선언
+		ar = new int[5]; // 배열 (주소) 생성 0~5
+		
+		
+		ar[0] = 25;
+		ar[1] = 36;
+		ar[2] = 42;
+		ar[3] = 17;
+		ar[4] = 95;
+		
+		
+		System.out.println("배열명 ar = " + ar); // 클래스명(Integer) @ 16진수 의 형태
+		System.out.println();
+		// System.out.println("ar[0] = " + ar[0]); // 반복을 for 문으로 변경
+		
+		for(int i=0; i<5; i++) {
+			System.out.println("ar[" + i + "] = " + ar[i]);
+			
+		} // for i 배열
+		
+		
+		
+		
+
+	}
+
+}

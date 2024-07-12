@@ -1,0 +1,25 @@
+package homework_class;
+
+public class MemberMain {
+
+	public static void main(String[] args) {
+		MemberService class의 menu 함수를 호출한다. (그 외 insert, list, update, delate 함수 포함)
+		
+		
+		
+		
+		System.out.println("프로그램을 종료합니다. ");
+		
+	}
+
+}
+
+/*
+호출 만.
+
+
+
+
+
+
+*/

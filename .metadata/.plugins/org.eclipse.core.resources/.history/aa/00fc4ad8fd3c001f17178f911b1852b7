@@ -1,0 +1,27 @@
+package fortest;
+
+public class ForTest {
+
+	public static void main(String[] args) {
+		// 삼중 for 문에서 break와 continue 사용 예제
+        outerLoop:
+        for (int i = 1; i <= 3; i++) {
+            for (int j = 1; j <= 3; j++) {
+                for (int k = 1; k <= 3; k++) {
+                    if (k == 2) {
+                        continue; // k가 2일 때 현재 반복을 건너뛰고 다음 k값으로 넘어갑니다.
+                    }
+                    if (i == 2 && j == 2 && k == 3) {
+                        break outerLoop; // 특정 조건이 만족되면 모든 반복문을 종료합니다.
+                    }
+                    System.out.println("i = " + i + ", j = " + j + ", k = " + k);
+                }
+                System.out.println("End of inner loop");
+            }
+            System.out.println("End of middle loop");
+        }
+        System.out.println("End of outer loop");
+
+	}
+
+}

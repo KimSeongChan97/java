@@ -1,0 +1,13 @@
+package for_;
+
+public class For01 {
+
+	public static void main(String[] args) {
+		/* for(A;B;c) {
+			D;
+	}
+	E */
+
+	}
+
+}

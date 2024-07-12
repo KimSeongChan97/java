@@ -1,0 +1,23 @@
+package for_;
+
+public class For01 {
+
+	public static void main(String[] args) {
+		/* for(A;B;c) {
+			D;
+			}
+			E   //A->B(조건) -> [ D -> C -> B(조건)] 반복. -> 거짓일 때 E
+		*/
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

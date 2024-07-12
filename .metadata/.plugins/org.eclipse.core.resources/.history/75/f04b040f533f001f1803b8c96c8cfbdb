@@ -1,0 +1,56 @@
+package class_;
+
+import java.util.Scanner;
+
+public class ComputeMain {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("횟수 입력 : ");
+		int size = scan.nextInt();
+		
+		ComputeDTO[] ar = new ComputeDTO[size]; // 횟수입력한  size 만큼의 배열을 생성함.
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		ComputeDTO aa = new ComputeDTO();
+		System.out.println("aa = " + aa);
+		aa.setX(320); // 호출 순서를지켜야 함
+		aa.setY(258);
+		
+		aa.calc();
+		
+		System.out.println(aa.getX() + "\t"
+							+aa.getY() + "\t"
+							+aa.getSum() + "\t"
+							+aa.getSub() + "\t"
+							+aa.getMul() + "\t"
+							+aa.getDiv());
+			
+	}
+
+	
+}
+
+
+/*
+[문제] 합, 차, 곱, 몫 구하시오.
+
+[실행결과]
+X		Y		SUM		SUB		MUL		DIV
+320		258
+
+*/

@@ -1,0 +1,10 @@
+package multiArray;
+
+public class MultiArray02 {
+
+	public static void main(String[] args) {
+		int[][] ar = new int[10][10]; // 100개의 값 ( 10행, 10열 )
+
+	}
+
+}

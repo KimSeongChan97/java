@@ -1,0 +1,32 @@
+package for_;
+
+public class For01 {
+
+	public static void main(String[] args) {
+		/* for(A;B;c) {
+			D;
+			}
+			E   //A->B(조건) -> [D -> C -> B(조건)] 반복. -> 거짓일 때 E
+		*/
+		
+		System.out.println("Hello Kitty!!");
+		System.out.println("Hello Kitty!!");
+		System.out.println("Hello Kitty!!");
+		System.out.println("Hello Kitty!!");
+		System.out.println("Hello Kitty!!"); // 단순한 반복
+		
+		int i; // 변수 i
+		for
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

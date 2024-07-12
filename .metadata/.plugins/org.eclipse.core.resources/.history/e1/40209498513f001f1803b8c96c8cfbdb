@@ -1,0 +1,38 @@
+package class_;
+
+
+public class ComputeDTO {
+	
+	private int x, y, sum, sub, mul;
+	private double div;
+	
+	public void setX(int x) {
+		System.out.println("this = " + this);
+		this.x = x; // DTO class 에 있는 x 로
+	}
+	
+	public void setY(int y) {
+		System.out.println("this = " + this);
+		this.y = y; // DTO class 에 있는 y 로
+	}
+	
+	public int getX() {
+		return this.x; // this 생략 가능
+	}
+	
+	public int getY() {
+		return this.y; // this 생략 가능
+	}
+	
+	public void calc() {
+		this.sum = this.x + this.y;
+		this.sub = this.x - this.y;
+		this.mul = this.x * this.y;
+		this.div = this.x / this.y;
+	}
+	
+	
+}
+
+
+

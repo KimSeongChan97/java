@@ -1,0 +1,19 @@
+package class_;
+
+// 1인분
+public class SalaryDTO {
+
+	public void setData(String n, String j, int b, int e) {
+		name = n;
+		job = j;
+		basic = b;
+		extra = e;
+		
+		
+		
+		
+	}
+	
+	
+	
+}

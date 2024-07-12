@@ -1,0 +1,25 @@
+package class__;
+
+public class StringBufferMain {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}
+
+/*
+원하는 단을 입력해라
+
+				
+---------------
+입력 : 2
+---------------생성자 에서 만듦
+2 * 1 = 2		output()으로 만듦
+2 * 2 = 4
+2 * 3 = 6
+...
+2 * 9 = 18
+
+*/

@@ -1,0 +1,33 @@
+package class_;
+
+class Person {
+	private String name;
+	private int age; // private 으로 숨김 기능
+	// private 을 공개하는 method 발생
+		public void setName(String n){ // name 에 대한 함수, void 를 통해 결과물이 나오진 않아도 내부적 적용 : 구현
+			name = n;
+		}
+		public void setAge(int a) {
+			age = a;
+		}
+		
+		public String getName() {
+			return name;
+		}
+} // 가상의 클래스 생성
+
+public class PersonMain {
+
+	public static void main(String[] args) {
+		Person aa; // 객체
+		aa = new Person(); // 생성
+		// aa = new Test(); - error 이미 aa의 클래스가 있으므로 새로운 객체 생성 불가
+		System.out.println("객체 aa = " + aa);
+		aa.setName(" 홍길동 "); // method 호출
+		aa.setAge(25);
+		System.out.println(" 이름 = " + aa.getName + "  나이 = " + aa.age);
+		
+
+	}
+
+}

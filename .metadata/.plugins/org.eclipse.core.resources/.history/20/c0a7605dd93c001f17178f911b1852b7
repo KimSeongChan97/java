@@ -1,0 +1,25 @@
+package while_;
+
+public class NumberGame {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+/*
+ [문제] 숫자 맞추기 게임
+ - 숫자의 범위는 1~100 사이로 한다.
+ - 컴퓨터가 숫자를 발생하면 사용자가 맞추는 프로그램이다.
+ 
+  
+ [실행결과]
+ 1~100 사이의 숫자가 발생했습니다. (컴퓨터가 발생한 숫자 87)
+ 
+ 숫자 입력 : 
+ 
+ 
+ 
+ */

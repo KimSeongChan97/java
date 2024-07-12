@@ -1,0 +1,21 @@
+package multiArray;
+
+public class MultiArray01 {
+
+	public static void main(String[] args) {
+		int[][] ar;
+		// int ar[][]; 이렇게 해도 된다.
+		ar = new int[3][2];
+
+	}
+
+}
+
+/*
+ 
+ 
+ 
+ 
+ 
+ 
+ */

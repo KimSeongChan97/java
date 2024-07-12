@@ -1,0 +1,20 @@
+package class__;
+
+public class StringMain {
+
+	public	StringMain() { // 기본 생성자
+		String aa = "apple"; // literal
+		String bb = "apple"; // literal, ※ 똑같은 내용의 문자열 리터럴은 메모리에 1번만 생성된다. 
+
+		
+		String cc = new String("apple"); // literal
+		String dd = new String("apple"); // literal 
+	}
+	
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}

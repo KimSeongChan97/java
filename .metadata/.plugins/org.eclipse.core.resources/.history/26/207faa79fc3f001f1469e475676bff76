@@ -1,0 +1,15 @@
+package class__;
+
+public class StringMain {
+
+	public	StringMain() { // 기본 생성자
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

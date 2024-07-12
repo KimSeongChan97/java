@@ -1,0 +1,29 @@
+package while_;
+
+public class DoWhile {
+
+	public static void main(String[] args) {
+		/*
+		
+		 초기값
+		 while(조건) {                  do{
+		참 일때(증감)
+			}                         }while(조건);
+		=> 거짓                          => 거짓
+		
+		 */
+		
+		// A B C D E F G ~ X Y Z
+		
+			char ch = 'A';
+			
+			do {
+				System.out.println(ch + " ");
+				
+			}while(ch<='Z'; ch++);
+			System.out.println();
+		
+
+	}
+
+}

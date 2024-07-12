@@ -1,0 +1,117 @@
+package array;
+
+import java.util.Scanner;
+
+public class ParkingSolo {
+
+    public static void main(String[] args) {
+        boolean[] ar = new boolean[5]; // 주차 공간을 나타내는 boolean 배열
+
+        Scanner scan = new Scanner(System.in);
+
+        // 주차장 관리 프로그램 시작 화면 출력
+        System.out.println("주차장 관리 프로그램");
+        System.out.println("**********");
+        System.out.println(" 1. 입차");
+        System.out.println(" 2. 출차");
+        System.out.println(" 3. 리스트");
+        System.out.println(" 4. 종료");
+        System.out.println("**********");
+        System.out.print(" 메뉴 선택: ");
+
+        // 사용자 입력을 받아 메뉴 선택 처리
+        int menu = scan.nextInt();
+
+        // 입차 기능
+        if (menu == 1) {
+            System.out.print(" 위치 입력: ");
+            int position = scan.nextInt();
+
+            // 입력된 위치가 유효한지 확인하고 처리
+            if (position >= 1 && position <= ar.length) {
+                if (ar[position - 1]) {
+                    System.out.println(position + " 위치에 입차할 수 없습니다. 이미 주차되어 있습니다.");
+                } else {
+                    ar[position - 1] = true; // 주차 공간을 차량으로 설정
+                    System.out.println(position + " 위치에 입차하였습니다.");
+                }
+            } else {
+                System.out.println(" 잘못된 위치입니다. 1부터 " + ar.length + "까지의 위치를 입력하세요.");
+            }
+
+        }
+        // 출차 기능
+        else if (menu == 2) {
+            System.out.print(" 위치 입력: ");
+            int position = scan.nextInt();
+
+            // 입력된 위치가 유효한지 확인하고 처리
+            if (position >= 1 && position <= ar.length) {
+                if (ar[position - 1]) {
+                    ar[position - 1] = false; // 주차 공간에서 차량 출차
+                    System.out.println(position + " 위치에서 출차하였습니다.");
+                } else {
+                    System.out.println(position + " 위치에는 차량이 주차되어 있지 않습니다.");
+                }
+            } else {
+                System.out.println(" 잘못된 위치입니다. 1부터 " + ar.length + "까지의 위치를 입력하세요.");
+            }
+
+        }
+        // 리스트 기능
+        else if (menu == 3) {
+            // 주차 공간 상태 출력
+            for (int i = 0; i < ar.length; i++) {
+                System.out.println((i + 1) + " 위치: " + (ar[i] ? "주차 중" : "주차 가능"));
+            }
+
+        }
+        // 종료 기능
+        else if (menu == 4) {
+            System.out.println("프로그램을 종료합니다.");
+        }
+        // 잘못된 메뉴 선택
+        else {
+            System.out.println("잘못된 메뉴 선택입니다.");
+        }
+
+        scan.close(); // Scanner 객체 닫기
+    }
+}
+
+
+/*
+
+[문제] 주차장 관리 프로그램
+
+
+
+[실행결과]
+주차장 관리 프로그램
+**************
+   1. 입차
+   2. 출차
+   3. 리스트
+   4. 종료
+**************
+  메뉴 : 
+
+[1번인 경우]
+위치 입력 : 3
+3위치에 입차 / 이미 주차되어있습니다
+
+[2번인 경우]
+위치 입력 : 4
+4위치에 출차 / 주차되어 있지않습니다
+
+[3번인 경우]
+1위치 : true
+2위치 : false
+3위치 : true
+4위치 : false
+5위치 : false
+
+[4번인 경우]
+프로그램을 종료합니다.
+
+*/

@@ -1,0 +1,22 @@
+package array;
+
+public class SelectionSort {
+
+	public static void main(String[] args) {
+		int [] ar = {25, 36, 30, 45, 28}; 
+
+	}
+
+}
+
+
+/*
+
+
+
+
+
+
+
+
+*/

@@ -1,0 +1,19 @@
+package multiFor_;
+
+public class MultiFor01 {
+
+	public static void main(String[] args) {
+		/*
+		다중 for 문
+			- for 문 안에 또 다른 for 문이 존재하는 것
+			- for 문에 사용되는 변수 명은 서로 달라야 한다.
+			- 겹쳐서도 안된다.
+		
+		
+		*/
+		
+		
+
+	}
+
+}

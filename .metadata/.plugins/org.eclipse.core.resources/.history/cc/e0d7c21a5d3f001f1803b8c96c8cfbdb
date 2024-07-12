@@ -1,0 +1,15 @@
+package homework_class;
+
+public class MemberDTO {
+
+	private String name; // 이름
+    private int age; // 나이
+    private String phone; // 핸드폰번호
+    private String address; // 주소
+	
+    public void setName() {
+    	this.name = name;
+    }
+	
+	
+}

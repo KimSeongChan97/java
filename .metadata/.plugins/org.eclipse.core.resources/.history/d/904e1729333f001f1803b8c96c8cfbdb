@@ -1,0 +1,11 @@
+package class_;
+
+public class SungJuk {
+	private String name;
+	ptivate int kor, eng, math, tot, avg, grade;
+	
+	
+	
+	
+	
+}

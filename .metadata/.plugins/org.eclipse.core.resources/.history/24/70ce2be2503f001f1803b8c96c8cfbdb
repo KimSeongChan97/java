@@ -1,0 +1,17 @@
+package class_;
+
+
+public class ComputeDTO {
+	
+	private int x, y, sum, sub, mul;
+	private double div;
+	
+	public void setX(int x) {
+		this.x = x; // DTO class 에 있는 x 로
+		
+		
+	}
+	
+	
+	
+}

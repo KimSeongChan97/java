@@ -1,0 +1,49 @@
+package basicsolo;
+
+public class VariableBasic {
+
+	public static void main(String[] args) {
+		/*1. int (Integer)
+		크기: 32비트 (4바이트)
+		범위: -2^31 (-2,147,483,648)에서 2^31-1 (2,147,483,647)
+		기본값: 0
+		설명: int는 정수를 저장하는 데 사용됩니다. 일반적으로 루프 카운터, 배열 인덱스, 정수 계산 등에서 많이 사용됩니다.
+		*/
+		int a = 100;
+		int b = -200;
+		int sum = a + b;  // sum은 -100
+		
+		/*
+		2. char (Character)
+		크기: 16비트 (2바이트)
+		범위: 0에서 65,535 (유니코드 값)
+		기본값: '\u0000' (널 문자)
+		설명: char는 단일 문자를 저장하는 데 사용됩니다. Java에서 char는 유니코드 문자로 저장되므로 모든 국제 문자를 지원합니다.
+		 */
+		char letterA = 'A';
+		char letterB = 'B';
+		char symbol = '@';
+		
+		/*
+		 3. double (Double-precision floating-point)
+		크기: 64비트 (8바이트)
+		범위: ±4.9e-324에서 ±1.8e308
+		정밀도: 15자리까지의 소수점 정밀도
+		기본값: 0.0
+		설명: double은 실수를 저장하는 데 사용됩니다. 높은 정밀도를 필요로 하는 계산에서 주로 사용됩니다. 
+		 */
+		double pi = 3.141592653589793;
+		double largeNumber = 4.5e100;
+		double sum = pi + largeNumber;
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

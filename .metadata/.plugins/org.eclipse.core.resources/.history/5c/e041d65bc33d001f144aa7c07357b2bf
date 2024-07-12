@@ -1,0 +1,52 @@
+package array;
+
+public class SelectionSort {
+
+	public static void main(String[] args) {
+		int [] ar = {25, 36, 30, 45, 28};
+		// int[] ar;
+		//ar = {25, 36, 30, 45, 28}; ---- error
+		
+		System.out.print("정렬 전 : ");
+			for(int i=0; i<ar.length; i++) {
+			System.out.print(ar[i] + " ");
+			}
+		System.out.println();
+		
+		// Selection sort
+			for(int i=0; i<ar[4]; i++)
+		
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		
+		
+		
+		System.out.print("정렬 후 : ");
+			for(int i=0; i<ar.length; i++) {
+			System.out.print(ar[i] + " ");
+			}
+		System.out.println();
+		
+		
+	}
+
+}
+
+
+/*
+
+
+
+
+
+
+
+
+*/

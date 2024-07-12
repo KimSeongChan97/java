@@ -1,0 +1,19 @@
+package class__;
+
+public class StringMain {
+
+	public	StringMain() { // 기본 생성자
+		String aa = "apple";
+		String bb = "apple";
+		
+		String cc = new String("apple");
+		String dd = new String("apple"); // literal 
+	}
+	
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}
